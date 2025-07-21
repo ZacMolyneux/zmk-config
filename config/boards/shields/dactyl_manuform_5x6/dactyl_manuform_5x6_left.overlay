@@ -1,5 +1,22 @@
 #include "dactyl_manuform_5x6.dtsi" // Notice that the main dtsi files are included in the overlay.
 
+/ {
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+        steps = <80>;
+        status = "okay";
+    };
+
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>; /* One trigger per detent for 20-detent encoder */
+    };
+};
+
 &kscan0 {
     col-gpios
         = <&pro_micro 2 GPIO_ACTIVE_HIGH>
