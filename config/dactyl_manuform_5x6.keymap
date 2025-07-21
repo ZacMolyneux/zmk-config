@@ -11,7 +11,8 @@
 / {
     behaviors {
         left_encoder: encoder_left {
-            compatible = "zmk,behavior-sensor-rotate    ";
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
             a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
