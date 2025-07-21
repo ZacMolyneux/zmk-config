@@ -11,8 +11,6 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-
-                default_layer { // Layer 0
 // -------------------------------
 // |  1  |  2  |  3  |  4  |  5  |
 // |  Q  |  W  |  F  |  P  |  G  |
