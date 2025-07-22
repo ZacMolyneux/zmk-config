@@ -49,7 +49,7 @@
                 &kp ESC		&kp Q		&kp W		&kp E		&kp R              &trans   &trans  &trans    &trans    &trans    
                 &kp LSHFT	&kp A		&kp S		&kp D		&kp F              &trans   &trans  &trans    &trans    &trans 
                 &kp LCTRL	&kp X		&kp C		&kp V		&kp G              &trans   &trans  &trans    &trans    &trans 
-                &trans		&none		&none		&kp LSHFT	&kp SPACE          &trans   &trans  &trans    &trans    &trans                                         
+                &trans		&none		&none		&kp LSHFT	&kp SPACE          &trans   &trans  &trans    &trans    &to 0                                         
                                             		&kp LCTRL	&kp TAB            &trans	&mo 1
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
