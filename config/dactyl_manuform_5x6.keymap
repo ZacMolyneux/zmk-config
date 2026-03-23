@@ -36,8 +36,8 @@
                 &to 2		&kp F2		&to 3   	&bootloader     &kp F5              &bootloader &kp F7      &kp F8      &kp F9       &kp F10   
                 &kp ESC		&kp GRAVE	&kp PG_UP	&none		&none               &kp MINUS   &kp UNDER   &kp EQUAL   &kp KP_PLUS  &kp F11    
                 &kp HOME	&kp LBKT	&kp LBRC	&kp LPAR	&kp END             &kp PIPE    &kp RPAR    &kp RBRC    &kp RBKT     &kp F12 
-                &trans		&trans		&kp PG_DN	&kp BSLH	&kp FSLH            &kp SQT     &kp DQT     &kp N3      &kp QMARK    &kp RSHFT 
-                &to 0		&LEFT	        &kp RIGHT	&kp BSPC	&kp DEL             &kp ENTER   &kp SPACE   &kp LPAR	&kp RPAR     &to 2                                    
+                &trans		&trans		&kp PG_DN	&kp BSLH	&kp FSLH            &kp SQT     &kp DQT     &kp BSLH    &kp QMARK    &kp RSHFT 
+                &to 0		&LEFT	        &kp RIGHT	&kp BSPC	&kp DEL             &kp ENTER   &kp SPACE   &kp UP	&kp DOWN     &to 2                                    
                                             		        &kp LCTRL	&kp TAB             &kp RALT	&kp RWIN
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
